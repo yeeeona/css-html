@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스 유형의 변경</title>
+    <style>
+        .container{width: 800px; margin: 0 auto;}
+        /* menul 구성 */
+        .menu1>ul{
+            background-color: lightgray; margin: 0; padding: 0;
+            width: 200px; list-style-type: none;
+        }
+        .menu1>ul>li{
+            display: inline-block;
+        }
+        .menu1>ul>li>a{
+            color: black; text-decoration: none;
+            display: block;
+        }
+        .menu1>ul>li>a:hover{
+            color: red; font-weight: bold;
+            text-decoration: underline;
+        }
+        /* menu2 구성: 세로 구성 */
+        .menu2 ul{
+            background-color: lightgray; margin: 0; padding: 0;
+            width: 200px; list-style: none;
+        }
+        .menu2 li{
+            padding:3%; text-align: center;
+        }
+        .menu2 a{
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu1">
+            <h3>프런트엔드 프로그래밍</h3>
+            <ul>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">jQuery</a></li>
+            </ul>
+        </div>
+        <div class="menu2">
+            <h3>백엔드 프로그래밍</h3>
+            <ul>
+                <li><a href="#">JAVA</a></li>
+                <li><a href="#">Oracle</a></li>
+                <li><a href="#">JSP</a></li>
+                <li><a href="#">Spring</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="Ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>입력 태그 응용</title>
+        <style>
+            #wrapper{
+                width: 600px;
+                margin:0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+
+        
+            <h2>회원 정보</h2>
+            <hr>
+            <form action="0614_01(div와 span).html" method="post">
+                <fieldset>
+                    <legend>인적사항</legend>
+                    <label for="name">이름</label> : <input type="text" placeholder="이름을 입력하세요" size="25" id="name"><br>
+                    <label for="id1">주민번호</label> : <input type="text" size="10" id="id1">-<input type="text" size="11"><br>
+                    <label for="country"></label>국적</label> : 
+                    <select name="country" id="country">
+                        <option value="Korea">내국인(대한민국)</option>
+                        <option value="China">중국</option>
+                        <option value="USA">미국</option>
+                        <option value="Japan">일본</option>
+                        <option value="Englangd">영국</option>
+                        <option value="others">기타</option>
+                    </select><br>
+                    <label for="license">취득 자격증</label> :
+                    <select name="license" id="license" multiple size="1">
+                        <option value="li1">정보처리기사</option>
+                        <option value="li2">운전면허증</option>
+                        <option value="li3">컴퓨터활용능력</option>
+                        <option value="li4">워드프로세서</option>
+                        <option value="li5">네트워크관리사2급</option>
+                        <option value="li6">직업상담사</option>
+                    </select>
+                </fieldset><br>
+                <fieldset>
+                    <legend>성별 & 학년</legend>
+                    <label for="">성별</label> : 
+                    <input type="radio" name="sex" id="male"><leabel for="male">남성</label>
+                    <input type="radio" name="sex" id="fmale"><label for="fmale">여성</label>
+                    <br>
+                    <input type="radio" name="year" id="y1"><label for="y1">1학년</label>
+                    <input type="radio" name="year" id="y2"><label for="y2">2학년</label>
+                    <input type="radio" name="year" id="y3"><label for="y3">3학년</label>
+                    <input type="radio" name="year" id="y4"><label for="y4">4학년</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>취미</legend>
+                    <input type="checkbox" name="hobby" id="h1"><label for="h1">독서</label>
+                    <input type="checkbox" name="hobby" id="h2"><label for="h2">바둑</label>
+                    <input type="checkbox" name="hobby" id="h3"><label for="h3">골프</label>
+                    <input type="checkbox" name="hobby" id="h4"><label for="h4">등산</label>
+                    <input type="checkbox" name="hobby" id="h5"><label for="h5">여행</label>
+                    <input type="checkbox" name="hobby" id="h6"><label for="h6">기타</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>메모사항</legend>
+                    <textarea name="'memo" id="meno" cold="77" rows="3" placeholder="메모글을 남겨주세요"></textarea>
+
+                </fieldset>
+                <br><br>
+                첨부서류 : <input type="file">\
+                <hr>
+                <input type="submit" value="저장하기">&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="다시 입력하기">
+
+
+            </form>
+        </div>
+    </body>
+</html>

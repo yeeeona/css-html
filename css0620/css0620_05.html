@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배치 방법 활용 5번</title>
+    <style>
+        /* 부모 박스와 자식 박스의 배치 */
+        #parent { 
+            width: 500px; height: 300px;
+            background-color: lightgray;
+            position: relative;
+        }
+        #child { 
+            width: 150px; height: 100px;
+            background-color: orange;
+            position: absolute;
+            /* 
+            부모 박스의 정가운데 자식 박스 배치
+            left: 부모박스 너비의 절반 - 자식박스 너비의 절반, 500/2 - 150/2 = 175
+            top: 부모박스 높이의 절반 - 자식박스 높이의 절반, 300/2 - 100/2 = 100
+            */
+            top: 100px; left: 175px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        부모 박스
+        <div id="child">자식 박스</div>
+    </div>
+</body>
+</html>

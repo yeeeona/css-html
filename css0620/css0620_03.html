@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배치 방법 활용 3번</title>
+    <style>
+        /* 드롭다운(drop-down) 메뉴 3번 */
+        .container { width: 1000px; margin: 0 auto;}
+        ul { 
+            width: 100%; padding: 6px;
+            background-color: lightgray;
+            list-style-type: none;
+        }
+        li.dropdown { 
+            padding: 10px 20px;
+            display: inline-block;
+            position: relative;
+        }
+        li a { 
+            color: black; 
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .submenu {
+            background-color: beige;
+            position: absolute;
+            display: none;
+            margin-top: 10px;
+            margin-left: -20px;
+        }
+        .submenu>a {
+            display: block;
+            padding: 10px 20px;
+        }
+        li.dropdown:hover { 
+            background-color: gray;
+        }
+        li.dropdown:hover .submenu {
+            display: block;
+        }
+        .submenu>a:hover { 
+            background-color: lavender;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>HTML5 프로그래밍</h3><hr>
+        <ul>
+            <li class="dropdown">
+                <a href="#">HOME</a>
+                <div class="submenu">
+                    <a href="#">submenu1</a>
+                    <a href="#">submenu2</a>
+                    <a href="#">submenu3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Menu1</a>
+                <div class="submenu">
+                    <a href="#">submenu1</a>
+                    <a href="#">submenu2</a>
+                    <a href="#">submenu3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Menu2</a>
+                <div class="submenu">
+                    <a href="#">submenu1</a>
+                    <a href="#">submenu2</a>
+                    <a href="#">submenu3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Menu3</a>
+                <div class="submenu">
+                    <a href="#">submenu1</a>
+                    <a href="#">submenu2</a>
+                    <a href="#">submenu3</a>
+                </div>
+            </li>
+        </ul>
+        <div>
+            <p>메뉴 내용을 나타내는 부분입니다.</p>
+        </div>
+    </div>
+</body>
+</html>

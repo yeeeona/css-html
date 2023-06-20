@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <title>테두리선(border) 속성</title>
+    <style>
+        h3{background-color: gray; color: white;}
+        .box{width: 150px; height: 50px; margin: 30px;}
+
+        #b1{
+            background-color: pink;
+            border-width: 10px;
+            border-style: solid;
+            border-color: gray;
+        }
+        #b2{
+            background-color: orange;
+            border: 5px solid blue;
+        }
+        #b3{
+            background-color: cyan;
+            border-width: 20px;
+            border-color: gray;
+            border-style: groove;
+        }
+        #b4{
+            background-color: greenyellow;
+            border-width: 10px;
+            border-color: gray;
+            border-style: dotted double;
+        }
+        #b5{
+            background-color: indianred;
+            border-top:10px solid gray;
+            border-bottom: 20px double green;
+            border-right: 15px double red;
+            border-left: 25px solid blue ;
+        }
+        #b6{
+            background-color: blueviolet;
+            border-width: 10px 20px;
+            border-color: gray red green blue;
+            border-style: solid double;
+        }
+    </style>
+</head>
+<body>
+    <h3>previous Line</h3>
+    <div id="b1" class="box">박스1</div>
+    <div id="b2" class="box">박스2</div>
+    <div id="b3" class="box">박스3</div>
+    <div id="b4" class="box">박스4</div>
+    <div id="b5" class="box">박스5</div>
+    <div id="b6" class="box">박스6</div>
+    <h3>Next Line</h3>
+</body>
+</html>

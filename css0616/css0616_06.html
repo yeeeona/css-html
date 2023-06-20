@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색상 정리 1번</title>
+    <style>
+        #container { width: 1000px; text-align: center;}
+        #container>div { width: 200px; height: 100px; margin: 20px; display: inline-block;}
+        /* 색상 정리 */
+        #container>div:nth-child(1) { background-color: lavender;}
+        #container>div:nth-child(2) { background-color: #e6e6fa;}  /* 실무적으로 가장 많이 사용 */
+        #container>div:nth-child(3) { background-color: rgb(230,230,250);}
+        #container>div:nth-child(4) { background-color: rgba(230,230,250,1);}
+        #container>div:nth-child(5) { background-color: rgba(230,230,250,0.5);}
+        #container>div:nth-child(6) { background-color: rgba(230,230,250,0.3);}
+        #container>div:nth-child(7) { background-color: rgba(230,230,250,0.5);}
+        #container>div:nth-child(8) { background-color: rgba(230,230,250,0.8);}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>색상1</div>
+        <div>색상2</div>
+        <div>색상3</div>
+        <div>색상4</div>
+        <div>색상5</div>
+        <div>색상6</div>
+        <div>색상7</div>
+        <div>색상8</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 오버로딩(Style Overloading)</title>
+    <link rel="stylesheet" href="css/css0615_02.css">
+    <!-- 외부 스타일 -->
+    <!--<style>
+        @import url("css/css0615_02.css");
+    </style>-->
+    <!-- 내부 스타일 -->
+    <style>
+        h1, h2, h5 {
+            background-color: skyblue;
+        }
+    </style>
+    <style>
+        h1, div {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>스타일 프로그래밍1</h1>
+    <!-- 인라인 스타일 -->
+    <h1 style="background-color:gray;">스타일 프로그래밍2</h1>
+    <h2>스타일 프로그래밍3</h2>
+    <div>
+        <h3>HTML 웹프로그래밍1</h3>
+    </div>
+    <pre>
+        <h3>HTML 웹프로그래밍2</h3>
+    </pre>
+    <h5>Javascript 프로그래밍1</h5>
+    <h4>Javascript 프로그래밍2</h4>
+</body>
+</html>

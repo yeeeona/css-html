@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 라운딩 1번</title>
+    <style>
+        div {
+            width: 150px; height: 50px;
+            background-color: red;
+            text-align: center; line-height: 50px;
+            margin: 10px;
+            display: inline-block;
+        }
+        #b1 { border-radius: 20px;}
+        #b2 { border-radius: 60px 20px;}
+        #b3 { border-radius: 80px 60px 40px 20px;}
+        #b4 { border-top-left-radius: 30px;}
+        #b5 { border-top-left-radius: 60px 30px;}
+        #b6 { border-radius: 10px/20px;}
+        #b7 { 
+            border-top-left-radius: 60px 30px;
+            border-bottom-right-radius: 60px 30px;
+            border-top-right-radius: 30px 60px;
+            border-bottom-left-radius: 30px 60px;
+        }
+        #b8 { border-radius: 50%;}
+        #b9 { border-radius: 40% 20%;}
+
+        #b10, #b11 { width: 100px; height: 100px;}
+        #b10 { border-radius: 50%; }
+        #b11 { border-radius: 20% 80%;}
+    </style>
+</head>
+<body>
+    <div id="b0">박스0</div>
+    <div id="b1">박스1</div>
+    <div id="b2">박스2</div>
+    <div id="b3">박스3</div>
+    <div id="b4">박스4</div>
+    <div id="b5">박스5</div>
+    <div id="b6">박스6</div>
+    <div id="b7">박스7</div>
+    <div id="b8">박스8</div>
+    <div id="b9">박스9</div>
+    <div id="b10">박스10</div>
+    <div id="b11">박스11</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스 내부의 정렬</title>
+    <style>
+        .container{width: 800px; margin: 0 auto; background-color: lightgray;}
+        .box{width: 350px; height: 80px; margin: 20;}
+        #b1{background-color: orange;}
+        #b2{background-color: hotpink; text-align: right;}
+        #b3{background-color: cyan; text-align: center;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="b1" class="'box">CSS 스타일 시트 1번</div>
+        <div id="b2" class="'box">CSS 스타일 시트 2번</div>
+        <div id="b3" class="'box">CSS 스타일 시트 3번</div>
+    </div>
+</body>
+</html>

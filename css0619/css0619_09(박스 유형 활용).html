@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스 유형 변경 활용</title>
+    <style>
+        .container{width: 800px; margin: 0 auto;}
+        .parent{
+            height: 50px; padding: 10px;
+            background-color: gray; padding: 10px;
+            text-align: center;
+        }
+        .parent>a{
+            color: black; 
+        }
+        .child{
+            display: inline-block;
+            background-color: orange;
+            width: 22%; height: 100%;
+            line-height: 50px;
+        }
+        .child:hover{
+            background-color: blueviolet; color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="parent">
+            <a href="#"><div class="child">메뉴 항목 1</div></a>
+            <a href="#"><div class="child">메뉴 항목 2</div></a>
+            <a href="#"><div class="child">메뉴 항목 3</div></a>
+            <a href="#"><div class="child">메뉴 항목 4</div></a>
+        </div>
+    </div>
+</body>
+</html>

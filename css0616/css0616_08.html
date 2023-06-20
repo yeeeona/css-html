@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 속성</title>
+    <style>
+        .container { width: 800px; margin: 0 auto; background-color: yellow;}
+        /* 텍스트 속성 */
+        .container>h3:nth-child(1) {
+            text-align: right;
+            text-transform: uppercase;
+            text-decoration: overline;
+        }
+        .container>h3:nth-child(2) {
+            text-align: center;
+            text-transform: lowercase;
+            text-decoration: underline;
+        }
+        .container>h3:nth-child(3) {
+            text-align: left;
+            text-transform: capitalize;
+            text-decoration: line-through;
+        }
+        .container>h3>a { 
+            text-decoration: none;
+        }
+        .container>h3>a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Time is Gold.</h3>
+        <h3>Time is Gold.</h3>
+        <h3>Time is Gold.</h3>
+        <h3><a href="">Time is Gold</a></h3>
+    </div>
+</body>
+</html>

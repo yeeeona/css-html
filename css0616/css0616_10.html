@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문단 속성</title>
+    <style>
+        .container { width: 1000px; margin: 0 auto;}
+        .container>h1 { text-align: center;}
+        .container>p { text-align: justify;}
+        #contents { column-count: 3; column-gap: 40px; column-rule: 2px dashed red;}
+        #contents>h2 { break-before: column;}
+        #contents>p { text-align: justify;}
+        #contents>#c1 { text-indent: 20px; line-height: 30px;}
+        #contents>#c2 { letter-spacing: 5px;}
+        #contents>#c3 { word-spacing: 10px;}
+
+        #contents>#c0 { column-span: all;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>건강에 좋은 식품 - Super Food</h1>
+        <div id="contents">
+            <h2>아보카도</h2>
+            <p id="c0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo placeat ullam dolor nihil fuga animi minima quisquam, consequatur quae, maiores nesciunt sit totam cum consequuntur officia soluta libero id ratione?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos tenetur voluptas magnam ducimus tempore dolore animi aut minus qui amet maxime voluptatem modi blanditiis reiciendis mollitia eum, corporis ex recusandae.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi natus accusamus recusandae molestiae repellendus! Eum numquam ab explicabo eligendi soluta labore, deleniti accusamus maxime, ipsa odit nisi ex asperiores iste.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, ullam! Ab, id aspernatur. Amet porro sunt doloremque architecto voluptas atque, fuga beatae officia quae officiis tempora. Sit adipisci corrupti minima!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima similique corporis quis laudantium veniam vitae consequatur obcaecati possimus. Ratione dolores molestias sit repellendus fugit consectetur obcaecati consequatur exercitationem quos debitis?
+            </p>    
+            <h2>케일</h2>
+            <p id="c1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat labore recusandae ipsam enim eius quasi quas, dicta fuga nostrum incidunt voluptas nobis sapiente quos fugiat esse similique. Dolor, itaque consequuntur.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia odio sed omnis, saepe tenetur ratione iure culpa quidem aspernatur laborum qui. Blanditiis voluptatum minima numquam. Nemo totam mollitia nisi cupiditate!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste ipsa unde architecto quis rem, modi nisi numquam fugit deleniti dicta totam illo deserunt ipsam laborum voluptatem dolore explicabo impedit soluta?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque optio vel error ipsa! Hic numquam incidunt unde consectetur ut distinctio cumque, quam, sapiente, provident excepturi vero! Fuga eos dignissimos mollitia.
+            </p>
+            <h2>블루베리</h2>
+            <p id="c2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit fugiat nihil asperiores rerum dolorum necessitatibus nam consequatur a ut rem minus assumenda sint id sit, ducimus cumque! Reprehenderit, at a!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis tempora consequatur itaque suscipit, rerum dolorum, enim mollitia nulla eos adipisci provident dolorem! Autem, nihil exercitationem! Suscipit nobis officia maxime?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore cum eligendi fugit magnam explicabo fugiat est rem, nesciunt ullam reiciendis officiis consequuntur totam, quis sint adipisci inventore earum veritatis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut minima deserunt minus autem, excepturi beatae ea temporibus facere repellat ducimus. Quidem voluptatem ipsa minima ullam cumque facilis cupiditate consectetur distinctio.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quam magni quasi commodi, suscipit sint minima quis doloribus eius at laborum voluptatem nulla, facilis, quaerat facere laboriosam. Dicta, aut assumenda.
+            </p>
+            <h2>아몬드</h2>
+            <p id="c3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam modi ratione quibusdam? Nisi quia adipisci repellendus ea, ex eveniet deleniti expedita natus nemo molestiae minus nam? Laudantium mollitia doloribus molestiae!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quasi atque cum ullam quae impedit neque assumenda ratione expedita excepturi voluptates recusandae perspiciatis, autem similique quam aspernatur eum, sit ipsum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio similique dolorem doloribus consequatur natus id, quae soluta officiis laboriosam quisquam magni voluptas a commodi molestias dolores assumenda obcaecati deserunt dolor?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, sapiente. Sunt sapiente ea illum, odio nam natus veniam assumenda, rerum dolorem numquam temporibus. Fuga eos libero dicta minima, officiis repellat?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis molestiae facere odit inventore perferendis vel quis a! Dolores facilis officia tenetur expedita est quae incidunt accusantium in modi voluptates.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eum magnam consectetur, corporis quam vero quo tempora maiores esse quos omnis fugit dolore impedit illo unde eligendi nobis quae quas.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

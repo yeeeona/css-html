@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상대 배치 방법</title>
+    <style>
+        dic{width: 150px; height: 50px; border: 1px solid gray;}
+        #b1{background-color: gray;}
+        #b2{background-color: green;}
+        #b3{
+            background-color: blue;
+            position: absolute;
+            top:30px; left:30px;
+        }
+        #b4{background-color: orange; margin: 0 20px;}
+        #b5{background-color: darkgray;}
+        #wrapper{
+            /* static(기본값), absolute, relative, fixed */
+            width: 300px; height: 200px; margin:0 10px;
+            position: absolute; top: 30px; left: 30;
+        }
+    </style>
+</head>
+<body>
+    <div id="b1">박스1</div>
+    <div id="wrapper">
+        <div id="b2">박스2</div>
+        <div id="b3">박스3</div>
+        <div id="b4">박스4</div>
+    </div>
+    <div id="b5">박스5</div>
+</body>
+</html>

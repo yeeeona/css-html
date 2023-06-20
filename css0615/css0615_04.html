@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디, 클래스 선택자</title>
+    <style>
+        /* 클래스 선택자 */
+        #a1 { background-color: orange;}
+        .c1 { background-color: skyblue; color: green;}
+        .c2 { color: blue;}
+        .c3 { color: red;}
+        li { color: purple;}
+        #a2 { color: white;}
+    </style>
+</head>
+<body>
+    <h3>스타일 프로그래밍</h3>
+    <ol>
+        <li class="c1 c3">HTML5</li>
+        <ul>
+            <li class="c2">하이퍼링크</li>
+            <li class="c2">입력양식</li>
+        </ul>
+        <li>CSS3</li>
+        <ul>
+            <li class="c3">선택자</li>
+            <li class="c3">CSS 스타일 속성</li>
+            <li class="c1" id="a1">레이아웃</li>
+        </ul>
+        <li class="c1 c2">Javascript</li>
+        <ul>
+            <li>변수, 연산자</li>
+            <li>제어문</li>
+            <li>클래스</li>
+        </ul>
+    </ol>
+    <p id="a1 a2">점심먹고 나면 졸려요!!!</p>
+</body>
+</html>

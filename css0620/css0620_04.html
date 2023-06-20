@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배치 방법 활용 4번</title>
+    <style>
+        /* 이미지 드롭다운 */
+        .container { 
+            width: 800px; margin: 0 auto;
+        }
+        .dropdown { 
+            position: relative;
+            display: inline-block;
+        }
+        .content { 
+            position: absolute;
+            display: none;
+        }
+        .desc { 
+            padding: 15px;
+            background-color: lightgray;
+            text-align: center;
+        }
+        .dropdown:hover .content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>드롭다운 이미지</h2>
+        <div class="dropdown">
+            <img src="images/image1.jpg" width="100" height="60">
+            <div class="content">
+                <img src="images/image1.jpg" width="300" height="180">
+                <div class="desc">아름다운 인왕산 길</div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <img src="images/image2.jpg" width="100" height="60">
+            <div class="content">
+                <img src="images/image2.jpg" width="300" height="180">
+                <div class="desc">아! 남한산성</div>
+            </div>
+        </div>
+        <div>
+            <p>아름다운 우리 강산 소개 내용</p>
+        </div>
+    </div>
+</body>
+</html>

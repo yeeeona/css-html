@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opacity 속성</title>
+    <style>
+        .box { 
+            width: 150px; height: 50px; 
+            background-color: red;
+            margin: 2px; text-align: center; line-height: 50px;
+        }
+        .box:nth-child(1) { opacity: 0.1;}
+        .box:nth-child(2) { opacity: 0.2;}
+        .box:nth-child(3) { opacity: 0.3;}
+        .box:nth-child(4) { opacity: 0.4;}
+        .box:nth-child(5) { opacity: 0.5;}
+        .box:nth-child(6) { opacity: 0.6;}
+        .box:nth-child(7) { opacity: 0.7;}
+        .box:nth-child(8) { opacity: 0.8;}
+        .box:nth-child(9) { opacity: 0.8;}
+        .box:nth-child(10) { opacity: 1.0;}
+
+        #parent, #images {
+            display: inline-block;
+        }
+        #images>img { 
+            display: block; 
+        }
+
+        img:nth-child(1) { opacity: 0.1;}
+        img:nth-child(2) { opacity: 0.2;}
+        img:nth-child(3) { opacity: 0.3;}
+        img:nth-child(4) { opacity: 0.4;}
+        img:nth-child(5) { opacity: 0.5;}
+        img:nth-child(6) { opacity: 0.6;}
+        img:nth-child(7) { opacity: 0.7;}
+        img:nth-child(8) { opacity: 0.8;}
+        img:nth-child(9) { opacity: 0.9;}
+        img:nth-child(10) { opacity: 1.0;}
+    </style>
+</head>
+<body>
+    <h3>박스의 배경색 투명도 비교</h3>
+    <div id="parent">
+        <div class="box">opacity 0.1</div>
+        <div class="box">opacity 0.2</div>
+        <div class="box">opacity 0.3</div>
+        <div class="box">opacity 0.4</div>
+        <div class="box">opacity 0.5</div>
+        <div class="box">opacity 0.6</div>
+        <div class="box">opacity 0.7</div>
+        <div class="box">opacity 0.8</div>
+        <div class="box">opacity 0.9</div>
+        <div class="box">opacity 1.0</div>
+    </div>
+    <div id="images">
+        <img src="images/image1.jpg" width="80" height="50">
+        <img src="images/image1.jpg" width="80" height="50">
+        <img src="images/image1.jpg" width="80" height="50">
+        <img src="images/image1.jpg" width="80" height="50">
+        <img src="images/image1.jpg" width="80" height="50">
+        <img src="images/image1.jpg" width="80" height="50">
+        <img src="images/image1.jpg" width="80" height="50">
+        <img src="images/image1.jpg" width="80" height="50">
+        <img src="images/image1.jpg" width="80" height="50">
+        <img src="images/image1.jpg" width="80" height="50">
+    </div>
+</body>
+</html>

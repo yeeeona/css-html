@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="Ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>테이블 속성</title>
+        <style>
+            /* 테이블 속성 */
+            table{width:600px;border: 1px solid black; border-collapse: collapse;
+            border-top: 5px solid blue; border-bottom: 5px solid blue; border-left: hidden; border-right: hidden;}
+            tr{height: 30px;}
+            th, td{border: 1px solid black; width: 20%;}
+
+        tr:first-child{ background-color: yellow; border-bottom: 5px solid blue;}
+        tr:last-child{background-color: lavender; }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>수업시간표(기본 출력)</caption>
+            <tr>
+                <th>시간/요일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="3">CSS</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td rowspan="2">HTML5</td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+               
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td colspan="2">Javascript</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
